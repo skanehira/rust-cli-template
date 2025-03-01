@@ -44,10 +44,8 @@ jobs:
         uses: reviewdog/action-setup@v1
 
       - name: Check format
-        env:
-          REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          cargo fmt --all -- --check | reviewdog -f=diff -diff="git diff" -name="cargo fmt" -reporter=github-pr-review
+          cargo fmt --all -- --check
 
       - uses: giraffate/clippy-action@v1
         with:
