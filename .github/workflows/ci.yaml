@@ -92,6 +92,6 @@ jobs:
 
       - name: Upload coverage
         if: runner.os == 'Linux'
-        uses: k1LoW/octocov-action@v0
+        uses: k1LoW/octocov-action@v1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
