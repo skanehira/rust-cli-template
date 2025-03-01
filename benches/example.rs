@@ -5,11 +5,6 @@ extern crate test;
 mod tests {
     use test::Bencher;
 
-    #[test]
-    fn it_works() {
-        assert_eq!(2 + 2, 4);
-    }
-
     fn fib(n: u32) -> u32 {
         if n == 0 {
             return 0;
