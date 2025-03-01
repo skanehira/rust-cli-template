@@ -63,8 +63,7 @@ allowing you to see changes over time.
 The coverage reports are deployed to GitHub Pages for easy visualization.
 Coverage information can also be displayed in the README as a badge.
 
-<img width="936" alt="image" src="https://github.com/user-attachments/assets/
-8471d58a-06b3-4fd5-85e6-916959704c69" />
+<img width="936" alt="image" src="https://github.com/user-attachments/assets/8471d58a-06b3-4fd5-85e6-916959704c69" />
 
 The detailed configuration for octocov is managed in the `.octocov.yml` file.
 
@@ -98,6 +97,26 @@ Benchmarks require the nightly Rust channel:
 ```bash
 cargo +nightly bench
 ```
+
+### Release Process
+
+This template includes an automated release workflow. Follow these steps to
+create a release:
+
+1. Push a tag with your changes:
+   ```bash
+   git tag v0.1.0  # Replace with the appropriate version number
+   git push origin v0.1.0
+   ```
+
+2. When the tag is pushed, the GitHub Actions `release.yml` workflow will
+   automatically execute. This workflow:
+   - Builds cross-platform binaries (Linux, macOS, Windows)
+   - Creates a GitHub Release
+   - Uploads binaries and changelog
+
+The release configuration is managed in the `.github/workflows/release.yml` and
+`goreleasser.yaml` files.
 
 ---
 
