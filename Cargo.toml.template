@@ -1,0 +1,8 @@
+[package]
+name = "{{project-name}}"
+version = "0.0.1"
+authors = ["{{author}}"]
+edition = "2024"
+
+[dependencies]
+clap = { version = "4.5.31", features = ["derive"] }

@@ -1,0 +1,18 @@
+[template]
+name = "rust-cli-template"
+description = "A template for creating Rust CLI applications"
+version = "0.0.1"
+ignore = [
+	"target",
+	"pre-script.rhai",
+	"cargo-generate.toml",
+	".git",
+	".DS_Store",
+	"init.sh",
+]
+
+[placeholders]
+author = { prompt = "author name", type = "string" }
+
+[hooks]
+pre = ["pre-script.rhai"]
