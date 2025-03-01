@@ -3,8 +3,18 @@ name: Rust CI
 on:
   push:
     branches: [main]
+    paths:
+      - '**/*.rs'
+      - '**/Cargo.toml'
+      - '**/Cargo.lock'
+      - '.github/workflows/ci.yaml'
+
   pull_request:
-    branches: [main]
+    paths:
+      - '**/*.rs'
+      - '**/Cargo.toml'
+      - '**/Cargo.lock'
+      - '.github/workflows/ci.yaml'
 
 env:
   CARGO_TERM_COLOR: always
@@ -27,7 +37,7 @@ jobs:
 
       - uses: actions-rust-lang/setup-rust-toolchain@v1
         with:
-          components: rustfmt, clippy, llvm-tools-preview
+          components: rustfmt, clippy
           cache-shared-key: setup-rust-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('**/Cargo.lock') }}
 
       - name: Install reviewdog
@@ -65,7 +75,7 @@ jobs:
 
       - uses: actions-rust-lang/setup-rust-toolchain@v1
         with:
-          components: rustfmt, clippy, llvm-tools-preview
+          components: llvm-tools-preview
           cache-shared-key: setup-rust-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('**/Cargo.lock') }}
 
       - name: Install tools
