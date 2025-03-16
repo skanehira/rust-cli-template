@@ -36,7 +36,7 @@ Generated projects will have the following structure:
 ├── benches/           # Benchmark code (requires nightly Rust)
 ├── src/               # Source code
 ├── .gitignore         # Git ignore file
-├── .octocov.yaml      # Code coverage configuration
+├── .octocov.yml       # Code coverage configuration
 ├── goreleasser.yaml   # GoReleaser configuration file for cross-platform builds and distribution
 ├── Cargo.toml         # Project manifest
 ├── Cargo.lock         # Dependency lock file
