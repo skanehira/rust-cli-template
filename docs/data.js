@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1748828997501,
+  "lastUpdate": 1750031991666,
   "repoUrl": "https://github.com/skanehira/rust-cli-template",
   "entries": {
     "Rust Benchmark": [
@@ -299,6 +299,36 @@ window.BENCHMARK_DATA = {
             "name": "tests::bench_fib",
             "value": 18.01,
             "range": "± 0.09",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d5f2a5ba16810a097befe07484f8e122c4de6007",
+          "message": "build(deps): Bump clap from 4.5.39 to 4.5.40 (#13)\n\nBumps [clap](https://github.com/clap-rs/clap) from 4.5.39 to 4.5.40.\n- [Release notes](https://github.com/clap-rs/clap/releases)\n- [Changelog](https://github.com/clap-rs/clap/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/clap-rs/clap/compare/clap_complete-v4.5.39...clap_complete-v4.5.40)\n\n---\nupdated-dependencies:\n- dependency-name: clap\n  dependency-version: 4.5.40\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2025-06-16T08:59:27+09:00",
+          "tree_id": "af2ec5c95381aa415b37ccaac45b22d9e74eea23",
+          "url": "https://github.com/skanehira/rust-cli-template/commit/d5f2a5ba16810a097befe07484f8e122c4de6007"
+        },
+        "date": 1750031990740,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "tests::bench_fib",
+            "value": 18,
+            "range": "± 0.14",
             "unit": "ns/iter"
           }
         ]
