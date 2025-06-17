@@ -16,8 +16,6 @@ comprehensive foundation with the following features:
 
 - CLI argument parsing using [clap](https://github.com/clap-rs/clap) with derive
   macros
-- Pre-configured Cursor IDE rules for consistent code style and development
-  experience
 - GitHub Actions workflow for CI/CD
   - Code coverage reporting with [octocov](https://github.com/k1LoW/octocov)
   - Automatic benchmark result visualization and deployment with
@@ -32,7 +30,6 @@ Generated projects will have the following structure:
 
 ```
 .
-├── .cursor/           # Cursor rules
 ├── .github/           # GitHub Actions workflows
 │   ├── workflows/     # CI/CD workflows for testing, benchmarking, and releasing
 │   │   ├── ci.yml     # Main CI workflow (tests, linting, coverage)

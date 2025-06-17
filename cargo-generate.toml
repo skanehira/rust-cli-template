@@ -13,6 +13,3 @@ ignore = [
 
 [placeholders]
 author = { prompt = "author name", type = "string" }
-
-[hooks]
-pre = ["pre-script.rhai"]
