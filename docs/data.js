@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1750031991666,
+  "lastUpdate": 1750161658810,
   "repoUrl": "https://github.com/skanehira/rust-cli-template",
   "entries": {
     "Rust Benchmark": [
@@ -329,6 +329,36 @@ window.BENCHMARK_DATA = {
             "name": "tests::bench_fib",
             "value": 18,
             "range": "± 0.14",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sho19921005@gmail.com",
+            "name": "skanehira",
+            "username": "skanehira"
+          },
+          "committer": {
+            "email": "sho19921005@gmail.com",
+            "name": "skanehira",
+            "username": "skanehira"
+          },
+          "distinct": true,
+          "id": "b51e007f378a73dea9cae08f7527f9adde1cd6a7",
+          "message": "refactor: remove Cursor IDE rules and related scripts\n\nThis commit removes the pre-configured Cursor IDE rules and associated\nscripts, including `init.sh` and `pre-script.rhai`. These changes simplify\nthe project structure by eliminating unnecessary files and configurations.\n\n- Downgraded `clap` dependency version to 4.5.31.\n- Updated `README.md` to reflect the removal of Cursor IDE rules.\n- Removed `pre` hooks from `cargo-generate.toml`.",
+          "timestamp": "2025-06-17T21:00:27+09:00",
+          "tree_id": "348c7f270c30f79a57d382cd4deb333334794444",
+          "url": "https://github.com/skanehira/rust-cli-template/commit/b51e007f378a73dea9cae08f7527f9adde1cd6a7"
+        },
+        "date": 1750161658220,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "tests::bench_fib",
+            "value": 18.02,
+            "range": "± 0.10",
             "unit": "ns/iter"
           }
         ]
