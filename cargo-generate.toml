@@ -10,6 +10,11 @@ ignore = [
 	".DS_Store",
 	"init.sh",
 ]
+exclude = [
+	".github/workflows/ci.yaml",
+	".github/workflows/release.yaml",
+	".goreleaser.yaml",
+]
 
 [placeholders]
 author = { prompt = "author name", type = "string" }
