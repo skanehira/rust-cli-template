@@ -13,6 +13,7 @@ ignore = [
 exclude = [
 	".github/workflows/ci.yaml",
 	".github/workflows/release.yaml",
+	".github/workflows/dependabot-auto-merge.yaml",
 	".goreleaser.yaml",
 ]
 
