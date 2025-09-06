@@ -5,6 +5,7 @@ on:
     - cron: "0 0 */3 * *"
 
   push:
+    branches: [main]
     paths:
       - "**/Cargo.toml"
       - "**/Cargo.lock"
