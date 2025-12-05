@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1755495188145,
+  "lastUpdate": 1764895278186,
   "repoUrl": "https://github.com/skanehira/rust-cli-template",
   "entries": {
     "Rust Benchmark": [
@@ -479,6 +479,36 @@ window.BENCHMARK_DATA = {
             "name": "tests::bench_fib",
             "value": 18.95,
             "range": "± 0.38",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a23e3922919dd197fcc64308d7c84a2ffed330ed",
+          "message": "build(deps): Bump actions/checkout from 5 to 6 (#26)\n\nBumps [actions/checkout](https://github.com/actions/checkout) from 5 to 6.\n- [Release notes](https://github.com/actions/checkout/releases)\n- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/actions/checkout/compare/v5...v6)\n\n---\nupdated-dependencies:\n- dependency-name: actions/checkout\n  dependency-version: '6'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2025-12-05T09:40:51+09:00",
+          "tree_id": "14699ed02ab56d8126ed927aa065672f10f59e97",
+          "url": "https://github.com/skanehira/rust-cli-template/commit/a23e3922919dd197fcc64308d7c84a2ffed330ed"
+        },
+        "date": 1764895277309,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "tests::bench_fib",
+            "value": 18.75,
+            "range": "± 1.97",
             "unit": "ns/iter"
           }
         ]
