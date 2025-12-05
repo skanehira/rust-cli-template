@@ -31,23 +31,23 @@ jobs:
         os: [ubuntu-latest, macos-latest, windows-latest]
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
         with:
           fetch-depth: 0
 
-      - uses: actions-rust-lang/setup-rust-toolchain@v1
+      - uses: actions-rust-lang/setup-rust-toolchain@1780873c7b576612439a134613cc4cc74ce5538c # v1.15.2
         with:
           components: rustfmt, clippy
           cache-shared-key: setup-rust-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('**/Cargo.lock') }}
 
       - name: Install reviewdog
-        uses: reviewdog/action-setup@v1
+        uses: reviewdog/action-setup@d8a7baabd7f3e8544ee4dbde3ee41d0011c3a93f # v1.5.0
 
       - name: Check format
         run: |
           cargo fmt --all -- --check
 
-      - uses: giraffate/clippy-action@v1
+      - uses: giraffate/clippy-action@13b9d32482f25d29ead141b79e7e04e7900281e0 # v1.0.1
         with:
           reporter: 'github-pr-review'
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -67,17 +67,17 @@ jobs:
       contents: write
       pull-requests: write
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
         with:
           fetch-depth: 0
 
-      - uses: actions-rust-lang/setup-rust-toolchain@v1
+      - uses: actions-rust-lang/setup-rust-toolchain@1780873c7b576612439a134613cc4cc74ce5538c # v1.15.2
         with:
           components: llvm-tools-preview
           cache-shared-key: setup-rust-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('**/Cargo.lock') }}
 
       - name: Install tools
-        uses: taiki-e/install-action@v2
+        uses: taiki-e/install-action@493d7f216ecab2af0602481ce809ab2c72836fa1 # v2.62.62
         with:
           tool: cargo-llvm-cov, cargo-nextest
 
@@ -92,6 +92,6 @@ jobs:
 
       - name: Upload coverage
         if: runner.os == 'Linux'
-        uses: k1LoW/octocov-action@v1
+        uses: k1LoW/octocov-action@73d561f65d59e66899ed5c87e4621a913b5d5c20 # v1.5.0
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
