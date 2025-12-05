@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1764895278186,
+  "lastUpdate": 1764895358957,
   "repoUrl": "https://github.com/skanehira/rust-cli-template",
   "entries": {
     "Rust Benchmark": [
@@ -509,6 +509,36 @@ window.BENCHMARK_DATA = {
             "name": "tests::bench_fib",
             "value": 18.75,
             "range": "± 1.97",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kanehira.sho@techlead-it.com",
+            "name": "skanehira",
+            "username": "skanehira"
+          },
+          "committer": {
+            "email": "kanehira.sho@techlead-it.com",
+            "name": "skanehira",
+            "username": "skanehira"
+          },
+          "distinct": true,
+          "id": "9e198a31e5f6274eac611bbb44d7efc207bef569",
+          "message": "ci: pin actions",
+          "timestamp": "2025-12-05T09:42:08+09:00",
+          "tree_id": "cfd0992ff8013ba2444cdebab9807be785082b92",
+          "url": "https://github.com/skanehira/rust-cli-template/commit/9e198a31e5f6274eac611bbb44d7efc207bef569"
+        },
+        "date": 1764895358174,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "tests::bench_fib",
+            "value": 18.36,
+            "range": "± 1.46",
             "unit": "ns/iter"
           }
         ]
