@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1769993105069,
+  "lastUpdate": 1770620645680,
   "repoUrl": "https://github.com/skanehira/rust-cli-template",
   "entries": {
     "Rust Benchmark": [
@@ -569,6 +569,36 @@ window.BENCHMARK_DATA = {
             "name": "tests::bench_fib",
             "value": 18.79,
             "range": "± 1.31",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3641926ca9ad4ecf0d6b0aa94c1f6bc95b12cc1a",
+          "message": "build(deps): Bump clap from 4.5.56 to 4.5.57 (#43)\n\nBumps [clap](https://github.com/clap-rs/clap) from 4.5.56 to 4.5.57.\n- [Release notes](https://github.com/clap-rs/clap/releases)\n- [Changelog](https://github.com/clap-rs/clap/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/clap-rs/clap/compare/clap_complete-v4.5.56...clap_complete-v4.5.57)\n\n---\nupdated-dependencies:\n- dependency-name: clap\n  dependency-version: 4.5.57\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2026-02-09T16:03:39+09:00",
+          "tree_id": "72e8a50133c9cccaa56898e90e759f6317d46af1",
+          "url": "https://github.com/skanehira/rust-cli-template/commit/3641926ca9ad4ecf0d6b0aa94c1f6bc95b12cc1a"
+        },
+        "date": 1770620644723,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "tests::bench_fib",
+            "value": 18.94,
+            "range": "± 2.64",
             "unit": "ns/iter"
           }
         ]
