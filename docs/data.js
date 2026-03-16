@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1773017428069,
+  "lastUpdate": 1773635688070,
   "repoUrl": "https://github.com/skanehira/rust-cli-template",
   "entries": {
     "Rust Benchmark": [
@@ -689,6 +689,36 @@ window.BENCHMARK_DATA = {
             "name": "tests::bench_fib",
             "value": 20.46,
             "range": "± 0.73",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b6151d5ba688e81abe7ce42390d4c3758d257da9",
+          "message": "build(deps): Bump clap from 4.5.60 to 4.6.0 (#55)\n\nBumps [clap](https://github.com/clap-rs/clap) from 4.5.60 to 4.6.0.\n- [Release notes](https://github.com/clap-rs/clap/releases)\n- [Changelog](https://github.com/clap-rs/clap/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/clap-rs/clap/compare/clap_complete-v4.5.60...clap_complete-v4.6.0)\n\n---\nupdated-dependencies:\n- dependency-name: clap\n  dependency-version: 4.6.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2026-03-16T13:34:22+09:00",
+          "tree_id": "5a8b1dafbad7779de2d73b9f330f3d4830dfa084",
+          "url": "https://github.com/skanehira/rust-cli-template/commit/b6151d5ba688e81abe7ce42390d4c3758d257da9"
+        },
+        "date": 1773635687263,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "tests::bench_fib",
+            "value": 18.81,
+            "range": "± 1.4",
             "unit": "ns/iter"
           }
         ]
