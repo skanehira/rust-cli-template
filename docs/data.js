@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1782088779920,
+  "lastUpdate": 1784507509067,
   "repoUrl": "https://github.com/skanehira/rust-cli-template",
   "entries": {
     "Rust Benchmark": [
@@ -869,6 +869,36 @@ window.BENCHMARK_DATA = {
             "name": "tests::bench_fib",
             "value": 18.95,
             "range": "± 2.25",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7dfe4531b5ff2b45c97b28de69a279a35cb8f6ce",
+          "message": "build(deps): Bump clap from 4.6.1 to 4.6.2 (#89)\n\nBumps [clap](https://github.com/clap-rs/clap) from 4.6.1 to 4.6.2.\n- [Release notes](https://github.com/clap-rs/clap/releases)\n- [Changelog](https://github.com/clap-rs/clap/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/clap-rs/clap/compare/clap_complete-v4.6.1...clap_complete-v4.6.2)\n\n---\nupdated-dependencies:\n- dependency-name: clap\n  dependency-version: 4.6.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2026-07-20T09:31:28+09:00",
+          "tree_id": "c5f36b433938452e294fd6c73d529ab528bb9459",
+          "url": "https://github.com/skanehira/rust-cli-template/commit/7dfe4531b5ff2b45c97b28de69a279a35cb8f6ce"
+        },
+        "date": 1784507508635,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "tests::bench_fib",
+            "value": 0.24,
+            "range": "± 0",
             "unit": "ns/iter"
           }
         ]
