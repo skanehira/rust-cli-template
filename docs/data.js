@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1784507509067,
+  "lastUpdate": 1785106527494,
   "repoUrl": "https://github.com/skanehira/rust-cli-template",
   "entries": {
     "Rust Benchmark": [
@@ -898,6 +898,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "tests::bench_fib",
             "value": 0.24,
+            "range": "± 0",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d66ffd80cd35eafbad4b313ea7466407ad5f3f6d",
+          "message": "build(deps): Bump clap from 4.6.2 to 4.6.4 (#91)\n\nBumps [clap](https://github.com/clap-rs/clap) from 4.6.2 to 4.6.4.\n- [Release notes](https://github.com/clap-rs/clap/releases)\n- [Changelog](https://github.com/clap-rs/clap/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/clap-rs/clap/compare/clap_complete-v4.6.2...clap_complete-v4.6.4)\n\n---\nupdated-dependencies:\n- dependency-name: clap\n  dependency-version: 4.6.4\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2026-07-27T07:54:56+09:00",
+          "tree_id": "6cff8aa4074ae37067f03448f69e76243bb008f1",
+          "url": "https://github.com/skanehira/rust-cli-template/commit/d66ffd80cd35eafbad4b313ea7466407ad5f3f6d"
+        },
+        "date": 1785106525752,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "tests::bench_fib",
+            "value": 0.31,
             "range": "± 0",
             "unit": "ns/iter"
           }
