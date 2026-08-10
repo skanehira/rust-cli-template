@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1785117477498,
+  "lastUpdate": 1786352795708,
   "repoUrl": "https://github.com/skanehira/rust-cli-template",
   "entries": {
     "Rust Benchmark": [
@@ -959,6 +959,36 @@ window.BENCHMARK_DATA = {
             "name": "tests::bench_fib",
             "value": 0.35,
             "range": "± 0.01",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kanehira.sho@techlead-it.com",
+            "name": "skanehira",
+            "username": "skanehira"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "35897d04ec4a07552dba308d6b46847d0174bf7b",
+          "message": "Merge pull request #97 from skanehira/dependabot/cargo/clap-4.6.6\n\nbuild(deps): Bump clap from 4.6.4 to 4.6.6",
+          "timestamp": "2026-08-10T18:06:07+09:00",
+          "tree_id": "72ecdcd8f6603d5c338eb995e94a68d2275c8d37",
+          "url": "https://github.com/skanehira/rust-cli-template/commit/35897d04ec4a07552dba308d6b46847d0174bf7b"
+        },
+        "date": 1786352794671,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "tests::bench_fib",
+            "value": 0.29,
+            "range": "± 0",
             "unit": "ns/iter"
           }
         ]
